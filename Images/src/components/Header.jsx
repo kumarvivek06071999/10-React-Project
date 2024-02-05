@@ -67,8 +67,8 @@ const Header = () => {
 
     const getImage = () => {
 
-        setImgUrl1(`https://source.unsplash.com/random/?${option1}`)
-        setImgUrl2(`https://source.unsplash.com/random/?$${option2}`)
+        setImgUrl1(`https://source.unsplash.com/random/?${option1},${option2}`)
+        setImgUrl2(`https://source.unsplash.com/random/?$${option2},${option1}`)
 
     }
     useEffect(() => {
