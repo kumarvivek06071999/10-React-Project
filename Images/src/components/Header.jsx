@@ -62,7 +62,6 @@ const Header = () => {
         // console.log(`Selected car: ${selectedOption.value}`);
         setOption2(selectedOption.value)
     };
-    console.log(option1, option2)
 
 
     const getImage = () => {
