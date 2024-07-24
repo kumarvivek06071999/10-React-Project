@@ -65,15 +65,8 @@ const Header = () => {
 
 
     const getImage = () => {
-        const url = `DNkIcBxpftxWr8iKns6U2EXBKjhwQ4j_mHfrxB82t3c`
-        fetch(url)
-         .then((res)=>{
-             return res.json()
-         })
-         .then((data)=>{
-             setImgUrl1(data.results[0].urls.raw)
-         })
-      //  setImgUrl1(`https://source.unsplash.com/random/?${option1},${option2}`)
+        
+        setImgUrl1(`https://source.unsplash.com/random/?${option1},${option2}`)
         setImgUrl2(`https://source.unsplash.com/random/?$${option2},${option1}`)
 
     }
