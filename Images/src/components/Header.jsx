@@ -65,14 +65,15 @@ const Header = () => {
 
 
     const getImage = () => {
-        
-        setImgUrl1(`https://source.unsplash.com/random/?${option1},${option2}`)
-        setImgUrl2(`https://source.unsplash.com/random/?$${option2},${option1}`)
-
+        // Using Lorem Picsum as Unsplash Source API was deprecated
+        const randomSeed1 = Math.random().toString(36).substring(7)
+        const randomSeed2 = Math.random().toString(36).substring(7)
+        setImgUrl1(`https://picsum.photos/seed/${randomSeed1}/800/600`)
+        setImgUrl2(`https://picsum.photos/seed/${randomSeed2}/800/600`)
     }
     useEffect(() => {
         getImage()
-    })
+    }, [option1, option2])
 
     return (
         <div>
